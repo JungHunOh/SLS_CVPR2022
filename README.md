@@ -18,9 +18,9 @@ If you find this code useful for your research, please consider citing our paper
 
 ## Results
 **Quantitative results**
-![](/figs/quantitative.PNG)
+![](/figs/quantitative.png)
 **Qualitative results**
-![](/figs/qualitative.PNG)
+![](/figs/qualitative.png)
 
 ## Usage
 Clone this repository.

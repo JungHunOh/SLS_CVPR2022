@@ -1,0 +1,1 @@
+python main.py --model carn --sls true --gpu $1 --M 32 --scale 4 --pretrained_dir $2 --compute_costs true

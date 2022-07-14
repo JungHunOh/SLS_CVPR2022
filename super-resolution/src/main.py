@@ -29,11 +29,8 @@ def main():
             _loss = loss.Loss(args, checkpoint) if not args.test_only else None
             t = Trainer(args, loader, _model, _loss, checkpoint)
             
-            if args.one_shot_pruning or args.sls:
-                _model.model.load_state_dict(torch.load(f'../experiment/carn_X{args.scale[0]}/model/model_best.pt'), strict=False)
-
-                if args.one_shot_pruning:
-                    ASP.prune_trained_model(_model.model, t.optimizer, mask_calculator=args.pattern)
+            if args.sls:
+                _model.model.load_state_dict(torch.load(f'./pretrained/carn_x4_pretrained.pt'), strict=False)
 
             if args.pretrained_dir is not None:
                 sd = torch.load(args.pretrained_dir)

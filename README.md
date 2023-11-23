@@ -23,7 +23,6 @@ If you find this code useful for your research, please consider citing our paper
 ![](/figs/qualitative.png)
 
 ## Dataset and Pre-trained models
-### Super-Resolution
 For super-resolution, we use [DIV2K](http://www.vision.ee.ethz.ch/%7Etimofter/publications/Agustsson-CVPRW-2017.pdf) dataset to train and validate a model.
 You can download it [here](https://cv.snu.ac.kr/research/EDSR/DIV2K.tar)
 
@@ -34,8 +33,6 @@ Unpack the downloaded tar files and change the ```args.dir_data``` in ```super-r
 
 Since our method is applied to pre-trained models, you should download them through [link](https://drive.google.com/drive/folders/1FxiKYjIHSsORnSTOEg4_D294-SGMe-P_?usp=sharing), make a directory ```mkdir super-resolution/pretrained```, and place the downloaded models in the directory.
 
-### Deblurring
-Will be available soon.
 
 ## Usage
 Clone this repository.
@@ -44,7 +41,6 @@ git clone https://github.com/JungHunOh/SLS_CVPR2022.git
 cd SLS_CVPR2022
 ```
 
-### Super-Resolution
 ```bash
 cd super-resolution/src
 ```
@@ -64,13 +60,9 @@ To see the computational costs (w.r.t MACs and Num. Params.) of a trained model,
 bash ./scripts/compute_costs.sh $gpu $model_dir
 ```
 
-### Deblurring
-Will be available soon.
-
 
 ## Acknowledgment
 Our implementation is based on the following repositories:
-* [Deblurring](https://github.com/SeungjunNah/DeepDeblur-PyTorch)
 * [EDSR](https://github.com/sanghyun-son/EDSR-PyTorch)
 * [CARN](https://github.com/nmhkahn/CARN-pytorch.git)
 * [Learning N:M Sparsity from Scratch](https://github.com/NM-sparsity/NM-sparsity.git)
